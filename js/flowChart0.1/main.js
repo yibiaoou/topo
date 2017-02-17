@@ -14,7 +14,7 @@ requirejs.config({
 	},
 	shim : {
 		'TupuApp':{
-			deps:['backbone','jquery','underscore','raphael','css!/topo/js/dTopology0.1/css/tupu.css']
+			deps:['backbone','jquery','underscore','raphael']
 		},
 		'backbone' : {
 			deps : ['underscore', 'jquery', 'libs/backBone/backbone-min'],
