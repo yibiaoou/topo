@@ -1,6 +1,7 @@
 
 requirejs.config({
 	baseUrl : "/topo/js",
+	waitSeconds: 0,	//永远不超时
 	paths : {
 		"jquery" : "libs/jquery-1.11.0",
 		"underscore" : "libs/underscore-min",
@@ -8,12 +9,12 @@ requirejs.config({
 		"raphael" : "libs/raphael-min",
 		"backbone" : "libs/backBone/backboneExpand",
 		"jqueryui":"libs/jqueryui/jquery-ui.min",
-		"TupuApp":"/bootstrapDUI/dTopology0.1/tupuApp"
+		"TupuApp":"dTopology0.1/tupuApp"
 		,"tupuProxy":"flowChart0.1/tupuProxy"
 	},
 	shim : {
 		'TupuApp':{
-			deps:['backbone','jquery','underscore','raphael','css!/bootstrapDUI/dTopology0.1/css/tupu.css']
+			deps:['backbone','jquery','underscore','raphael','css!/topo/js/dTopology0.1/css/tupu.css']
 		},
 		'backbone' : {
 			deps : ['underscore', 'jquery', 'libs/backBone/backbone-min'],
@@ -38,7 +39,7 @@ requirejs.config({
 	}
 	,packages:[{
 		name:"tupuDeps"
-		,location:"/bootstrapDUI/dTopology0.1"
+		,location:"/topo/js/dTopology0.1"
 		,main:"./tupuProxy.js"
 	}]
 });
@@ -46,8 +47,8 @@ requirejs.config({
 
 require(['/topo/js/dTopology0.1/configs.js'],function(Config){
 	window.tupuConfig = Config;
-	tupuConfig.setBaseUrl("/bootstrapDUI/dTopology0.1")
-	tupuConfig.overUrl = "/bootstrapDUI/ViewTest/js/flowChart0.1/flowrPart";
+	tupuConfig.setBaseUrl("/topo/js/dTopology0.1")
+	tupuConfig.overUrl = "/topo/js/ViewTest/js/flowChart0.1/flowrPart";
 	tupuConfig.replaceFiles({
 		temps:[{
 			name:"node",
@@ -85,11 +86,11 @@ var serverData = {"node":[{"id":"start","locate":{"x":319,"y":61},"tempType":2,"
 		var tupu = new TupuApp({
 			el:$("#tupu-wrap"),
 			model:(new Backbone.Model({
-				url:"/bootstrapDUI/ViewTest/js/flowChart0.1/datas/data3.json"
+				// url:"/bootstrapDUI/ViewTest/js/flowChart0.1/datas/data3.json"
 //				url:"/bootstrapDUI/ViewTest/js/flowChart0.1/datas/data1.json"
 
-//,node:serverData.node
-//,line:serverData.line
+node:serverData.node
+,line:serverData.line
 //,group:[]
 // ,node:serverData.node
 // ,line:serverData.line
