@@ -89,8 +89,8 @@ var serverData = {"node":[{"id":"start","locate":{"x":319,"y":61},"tempType":2,"
 				url:"/topo/js/flowChart0.1/datas/data3.json"
 //				url:"/bootstrapDUI/ViewTest/js/flowChart0.1/datas/data1.json"
 
-node:serverData.node
-,line:serverData.line
+// node:serverData.node
+// ,line:serverData.line
 //,group:[]
 // ,node:serverData.node
 // ,line:serverData.line
