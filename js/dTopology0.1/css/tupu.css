@@ -1,0 +1,61 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.node{
+	cursor: move;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	white-space:nowrap;
+}
+
+.tupu-wrap{
+	border: 1px solid #E7E7E7;
+	width:800px;
+	margin: 0 auto;
+}
+.tupu-wrap .tool-wrap{
+	padding: 5px 10px;
+	border-bottom: 1px solid #DBDBDB;
+}
+.tupu{
+	position: relative;
+	overflow: auto;
+	height:500px;
+	
+	/*background: #f1f1f1;*/
+	/*border: 1px solid #f00;*/
+}
+
+.menu-wrap{
+	position: absolute;
+	z-index: 10;
+	top: 0;
+	left: 0;
+}
+.menu-wrap ul{
+	list-style: none;
+	padding: 5px;
+	border: 1px solid #ccc;
+	background: #fff;
+	border-radius: 4px;
+	font-size: 14px;
+	box-shadow:0 6px 12px rgba(0,0,0,.175);
+	white-space:nowrap;			/* 强制不换行 */
+}
+.menu-wrap li+li{
+	padding: 5px 0 0 0;
+}
+.menu-wrap ul a,.menu-wrap ul i{
+	display: inline-block;
+}
+.menu-wrap ul a{
+	text-decoration: none;
+	color: #333;
+}
+
+.pull-right{
+	float: right;
+}

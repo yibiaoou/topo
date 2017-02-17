@@ -1,0 +1,8 @@
+<ul data-role="<%= role %>">
+	<% _.each(menus,function(item){ %>
+	<li data-id="<%= item.id %>">		
+		<i class="<%= item.icon %>"></i>
+		<a href="javascript:;"><%= item.name %></a>
+	</li>
+	<% }); %>
+</ul>
