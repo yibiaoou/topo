@@ -44,7 +44,7 @@ requirejs.config({
 });
 
 
-require(['/bootstrapDUI/dTopology0.1/configs.js'],function(Config){
+require(['/topo/js/dTopology0.1/configs.js'],function(Config){
 	window.tupuConfig = Config;
 	tupuConfig.setBaseUrl("/bootstrapDUI/dTopology0.1")
 	tupuConfig.overUrl = "/bootstrapDUI/ViewTest/js/flowChart0.1/flowrPart";
