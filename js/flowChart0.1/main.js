@@ -1,6 +1,6 @@
 
 requirejs.config({
-	baseUrl : "/bootstrapDUI/ViewTest/js",
+	baseUrl : "/topo/js",
 	paths : {
 		"jquery" : "libs/jquery-1.11.0",
 		"underscore" : "libs/underscore-min",
