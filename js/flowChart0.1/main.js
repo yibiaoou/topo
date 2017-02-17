@@ -86,7 +86,7 @@ var serverData = {"node":[{"id":"start","locate":{"x":319,"y":61},"tempType":2,"
 		var tupu = new TupuApp({
 			el:$("#tupu-wrap"),
 			model:(new Backbone.Model({
-				// url:"/bootstrapDUI/ViewTest/js/flowChart0.1/datas/data3.json"
+				url:"/topo/js/flowChart0.1/datas/data3.json"
 //				url:"/bootstrapDUI/ViewTest/js/flowChart0.1/datas/data1.json"
 
 node:serverData.node
