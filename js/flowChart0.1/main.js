@@ -48,7 +48,7 @@ requirejs.config({
 require(['/topo/js/dTopology0.1/configs.js'],function(Config){
 	window.tupuConfig = Config;
 	tupuConfig.setBaseUrl("/topo/js/dTopology0.1")
-	tupuConfig.overUrl = "/topo/js/ViewTest/js/flowChart0.1/flowrPart";
+	tupuConfig.overUrl = "/topo/js/flowChart0.1/flowrPart";
 	tupuConfig.replaceFiles({
 		temps:[{
 			name:"node",
