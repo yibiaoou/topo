@@ -1,5 +1,8 @@
 # topo
 
+
+requirejs+backbone+underscore+jquery+raphael
+<br />
 简单拓扑例子 <a href="https://yibiaoou.github.io/topo/index">demo</a>
 浏览器兼容ie8+
 展示、编辑、保存（部分功能没有添加上去）
