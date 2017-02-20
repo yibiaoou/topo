@@ -18,7 +18,7 @@ define([tupuConfig.getBaseView("line")],function(Line){
 			this.model.set({
 				textSvg:[self.titleMiddle],
 				lineSvg:self.line						//保存line对象
-				,lineStyle:2								//设置line样式,是否带箭头
+				,lineStyle:1								//设置line样式,是否带箭头
 				,textColor:"#333"						//先写死文字颜色
 			});		
 
